@@ -1,0 +1,526 @@
+@import url(./layout_base.css);
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Noto+Sans+KR:wght@500&display=swap");
+* {
+  font-family: "Noto Sans KR", sans-serif;
+}
+body {
+  width: 100%;
+  font-size: 16px;
+  height: 100%;
+  color: #1c1c1c;
+  white-space: normal;
+  word-break: normal;
+  word-wrap: break-word;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.lexend {
+  font-family: "Lexend Deca", sans-serif;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: inherit;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+a:link,
+a:visited,
+a:hover,
+a:focus {
+  color: #1c1c1c;
+}
+.clear::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+img {
+  border: none;
+  vertical-align: middle;
+}
+.hdd,
+legend {
+  font-size: 0;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+  overflow: hidden;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.box_inner {
+  width: 100%;
+  margin: 0 auto;
+}
+input,
+select,
+textarea,
+button,
+form,
+lable {
+  vertical-align: middle;
+}
+fieldset {
+  border: none;
+}
+/*제목*/
+.main {
+  display: block;
+  background: url(/dessert39/images/background.jpg);
+  height: 185px;
+  width: 100%;
+}
+.main > .text {
+  padding: 110px 200px 0 200px;
+  height: 101px;
+  width: 100%;
+}
+.main > .text > .kor {
+  font-size: 26px;
+}
+.main > .text > .beverage {
+  margin-top: 15px;
+  font-size: 60px;
+}
+/*추천베스트메뉴*/
+/*공통*/
+.explain > div {
+  position: relative;
+}
+.explain .mainName {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: center;
+  margin: 120px auto 0 auto;
+}
+.explain .box {
+  position: absolute;
+  z-index: -100;
+  background-color: #ececec;
+  height: 20px;
+  width: 450px;
+  margin: -15px 0 0 0%;
+  left: 35%;
+}
+.recommend3040,
+.recommend4050,
+.recommendProm {
+  display: none;
+}
+
+.explain .recImg {
+  position: relative;
+  left: 18%;
+  width: 80%;
+}
+.explain .recImg li {
+  float: left;
+  width: 200px;
+  position: relative;
+  text-align: center;
+  margin: 40px 30px 0 30px;
+}
+.explain .recImg li:first-child {
+  margin-left: 0;
+}
+.explain .recImg li:last-child {
+  margin-right: 0;
+}
+.explain .recImg li:before {
+  content: "";
+  position: absolute; /*부모 요소에는 position: relative를 주어야 함*/
+  background-color: black;
+  height: 1.8px;
+
+  width: 0; /*초기에 보이지 않도록*/
+  bottom: -5px; /*a태그 아래에 위치*/
+  transition: 0.8s; /*애니메이션 동작 실행 시간 정의*/
+}
+
+.explain .recImg li:hover:before {
+  width: 100%;
+}
+.explain .recImg li .recommendImg {
+  width: 200px;
+  height: 200px;
+  background-color: #f3f4f5;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+.explain .recImg li .recommendImg:hover {
+  animation: target_image 0.8s;
+
+  animation-iteration-count: 1;
+
+  transform-origin: 50% 50%;
+}
+
+@keyframes target_image {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  60% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.explain .underBar {
+  height: 35px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.explain .underBar .left,
+.explain .underBar .right {
+  height: 35px;
+  width: 35px;
+}
+.explain .underBar .bar {
+  height: 35px;
+  width: 1000px;
+  margin: 0 100px 0 100px;
+}
+
+.promotion .taPro {
+  width: 100%;
+  height: 350px;
+  margin: 200px auto;
+  text-align: center;
+}
+.promotion .tr1stPro {
+  height: 330px;
+}
+.promotion .tr1stPro > td:nth-child(odd) > a > img {
+  width: 35px;
+  height: 35px;
+}
+.promotion .tdProImg {
+  padding: 0 70px;
+}
+.promotion .tdProImg li > img {
+  float: left;
+  width: 350px;
+  position: relative;
+  text-align: center;
+  margin: 0 0 0 2%;
+}
+.promotion .taPro .tr2ndPro .bar > img {
+  height: 35px;
+  width: 80%;
+  padding: 0 20px 0 20px;
+  margin: 0 50px 0 50px;
+}
+
+/*음료*/
+.explain .taRec {
+  width: 800px;
+  height: 45px;
+  margin: 50px auto;
+  border-spacing: 10px;
+  border-collapse: separate;
+}
+.explain .taRec .trRec .tdRec button {
+  width: 180px;
+  padding: 10px 30px 10px 30px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 25px;
+  height: 50px;
+  border: 1px solid #1c1c1c;
+  background-color: white;
+}
+.explain .taRec .trRec .tdRec :hover {
+  background-color: #1c1c1c;
+  cursor: pointer;
+  color: white;
+}
+.explain .taRec .trRec .tdRec label :hover {
+  color: white;
+}
+
+/*디저트*/
+.explain .deRecImg {
+  margin: 60px 300px;
+}
+
+/*회색배경*/
+/*공통*/
+.grey {
+  position: relative;
+  background-color: #fafbfc;
+  padding: 50px 0 0 0;
+}
+.grey .beverageMenu .menuTitle {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: center;
+  margin: 120px auto 0 auto;
+}
+
+.grey .box {
+  position: absolute;
+  z-index: -100;
+  background-color: #ececec;
+  height: 20px;
+  width: 450px;
+  margin: -15px 38% 0 38%;
+}
+.grey .beverageMenu > p {
+  font-size: 18px;
+  text-align: center;
+  margin: 30px 0;
+}
+.grey .beverageMenu .taMenu {
+  margin: 0 auto;
+  border-spacing: 39px;
+}
+.grey .beverageMenu .taMenu td {
+  width: 143px;
+  height: 143px;
+  border: 3px solid black;
+  text-align: center;
+  margin: 0 2% 0 0;
+  font-weight: 700;
+}
+.grey .beverageMenu .taMenu a {
+  width: 143px;
+  height: 143px;
+}
+.grey .beverageMenu .taMenu .menuImg {
+  height: 56px;
+}
+.grey .beverageMenu .taMenu p {
+  margin: 20px 0 0 0;
+}
+.grey .beverageMenu .taMenu td:hover {
+  background-color: black;
+  cursor: pointer;
+  color: white;
+}
+.grey .beverageMenu .taMenu td:hover img {
+  filter: invert(100%);
+}
+.grey .beverageMenu .taMenu td:hover a {
+  color: white;
+}
+
+.grey > .mainMenu > .menuList {
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+  border-spacing: 20px;
+}
+.grey > .mainMenu > .menuList img {
+  width: 170px;
+  height: 170px;
+}
+.grey .mainMenu .menuList .tdMenuList {
+  background-color: white;
+  width: 264px;
+  height: 376px;
+  font-size: 18px;
+  font-weight: 300;
+  box-sizing: border-box;
+  box-shadow: rgba(38, 38, 38, 0.094) 0 0 20px 0;
+  border-radius: 10px;
+  line-height: 20px;
+  letter-spacing: -0.7px;
+  word-spacing: 0;
+}
+.grey .mainMenu .menuList .tdMenuList .name {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 15px 0;
+}
+.grey .mainMenu .menuList .tdMenuList .price {
+  margin-top: 3px;
+}
+.grey .mainMenu .menuList .tdMenuList .more {
+  border: 2px solid;
+  font-size: 14px;
+  font-weight: 600;
+  width: 110px;
+  height: 32px;
+  border-radius: 25px;
+  margin: 30px auto 0 auto;
+  padding: 5px 0 0 0;
+}
+.grey .mainMenu .menuList .tdMenuList .more:hover {
+  background-color: black;
+  cursor: pointer;
+  color: white;
+}
+
+.grey .mainMenu .menuList .tdMenuList .more a:hover {
+  color: white;
+}
+
+/*음료*/
+#coffee > p:first-child,
+#yogurt > p:first-child,
+#tea > p:first-child,
+#godprice > p:first-child,
+#cheesepromage > p:first-child,
+#protein > p:first-child {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 80px;
+}
+#coffee > p:nth-child(2),
+#yogurt > p:nth-child(2),
+#tea > p:nth-child(2),
+#godprice > p:nth-child(2),
+#cheesepromage > p:nth-child(2),
+#protein > p:nth-child(2) {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: #999999;
+  margin: 25px 0 50px 0;
+}
+
+/*디저트*/
+#cake > p:first-child,
+#bingsu > p:first-child,
+#macaron > p:first-child,
+#cookie > p:first-child,
+#bakery > p:first-child,
+#tokyoroll > p:first-child {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin: 80px 0 40px 0;
+}
+
+/*자세히보기*/
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+
+  /* 숨기기 */
+  z-index: -1;
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+  z-index: 1000;
+  transition: all 0.5s;
+}
+
+.window {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+
+  /* 임시 지정 */
+  width: 544px;
+  height: 722px;
+
+  /* 초기에 약간 아래에 배치 */
+  transform: translate(-50%, -40%);
+}
+
+.popup .moreImg {
+  width: 310px;
+  height: 310px;
+  margin: 0 117px;
+  padding-bottom: 25px;
+}
+
+.popup .text {
+  padding: 25px;
+  background-color: white;
+  height: 302px;
+  border-radius: 0 0 25px 25px;
+}
+
+.popup .text p {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.popup .text .moName {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 36.4px;
+  letter-spacing: -1.3px;
+  padding-top: 25px;
+}
+.popup .text .moSize {
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+  line-height: 18px;
+}
+.popup .text .moExplain {
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: -1px;
+  line-height: 26px;
+}
+.popup .text .moPrice {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: -1.1px;
+  padding-bottom: 0;
+}
+
+.show .popup {
+  transform: translate(-50%, -50%);
+  transition: all 0.5s;
+  padding-top: 25px;
+}
+
+.close {
+  margin: 50px 0 0 480px;
+  cursor: pointer;
+}
+.close img {
+  width: 40px;
+  height: 40px;
+}
