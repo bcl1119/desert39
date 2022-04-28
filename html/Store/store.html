@@ -22,6 +22,10 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
         />
+        <link
+            rel="icon"
+            href="http://dessert39.com/html/assets/img/common/dessert39_favicon.ico"
+        />
         <link rel="stylesheet" href="/css/store.css" />
         <title>디저트39</title>
     </head>
@@ -927,12 +931,6 @@
         // ------------- 카카오 웹 api 자바스크립트 부분 끝 -------------
         // ------------- 팝업 스토어 시작 -------------
         $(function () {
-            // $(".btn-popup-store").click(function () {
-            //     $(".popup-store").fadeIn();
-            //     map.relayout();
-            //     map.setCenter(new kakao.maps.LatLng(37.496579, 127.02634));
-            // });
-
             $(".btn-popup-store").click(function () {
                 $(".popup-store").css("visibility", "visible");
             });
@@ -968,18 +966,7 @@
                     ".popup-store, .popup-store1, .popup-store2, .popup-store3 ,.popup-store4"
                 ).css("visibility", "hidden");
             });
-            // $(".btn-popup-close").click(function () {
-            //     $(".popup-store1").fadeOut();
-            // });
-            // $(".btn-popup-close").click(function () {
-            //     $(".popup-store2").fadeOut();
-            // });
-            // $(".btn-popup-close").click(function () {
-            //     $(".popup-store3").fadeOut();
-            // });
-            // $(".btn-popup-close").click(function () {
-            //     $(".popup-store4").fadeOut();
-            // });
+
             $(".btn-popup-close").click(function () {
                 $(".popup-bg").fadeOut();
             });
@@ -992,19 +979,6 @@
                     ".popup-store, .popup-store1, .popup-store2, .popup-store3, .popup-store4"
                 ).css("visibility", "hidden");
             });
-            // $(".popup-bg").click(function () {
-            //     $(".popup-store1").fadeOut();
-            // });
-            // $(".popup-bg").click(function () {
-            //     $(".popup-store2").fadeOut();
-            // });
-            // $(".popup-bg").click(function () {
-            //     $(".popup-store3").fadeOut();
-            // });
-            // $(".popup-bg").click(function () {
-            //     $(".popup-store4").fadeOut();
-            // });
         });
-        // map.relayout();
     </script>
 </html>
