@@ -1,70 +1,67 @@
-*{
-  margin:0;
-  padding:0;
-  border:0;
-  box-sizing: border-box;
-  font-family: 'Noto Sans KR', sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans KR", sans-serif;
 }
 
-.font2{
-  font-family: 'Lexend Deca', sans-serif;
+.font2 {
+    font-family: "Lexend Deca", sans-serif;
 }
 
-.container{
-  width: 100%;
-  padding: 2vw;
-
+.container {
+    width: 100%;
+    padding: 2vw;
 }
 
-.container2{
-  width: 100%;
-  padding: 5vw;
-
+.container2 {
+    width: 100%;
+    padding: 5vw;
 }
 
-.top{
-  height: 180px;
-  background-image: url('http://dessert39.com/html/assets/img/common/sub_banner_bg.png')
+.top {
+    height: 180px;
+    background-image: url("http://dessert39.com/html/assets/img/common/sub_banner_bg.png");
 }
 
-.icon{
-  width:25px;
-  margin-bottom: 10px;
+.icon {
+    width: 25px;
+    margin-bottom: 10px;
 }
 
-li{
-  list-style: none;
+li {
+    list-style: none;
 }
 
-li .frame{
-  overflow:hidden;
-  width: 100%;
-  height: 160px;
-  border-radius: 50%;
+li .frame {
+    overflow: hidden;
+    width: 100%;
+    height: 160px;
+    border-radius: 50%;
 }
 
-.frame img{
-  display: block;
-  width:100%;
-  height: 100%;
-  object-fit: cover;
-
+.frame img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.imgbox{
-  margin: 30px 0;
-  display: flex;
-  justify-content: space-between;
+.imgbox {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
 }
 
-.center{
-  width:95%;
-  margin:0 auto;
+.center {
+    width: 95%;
+    margin: 0 auto;
 }
 
-a{
-  text-decoration: none;
-  outline: none;
+a {
+    text-decoration: none;
+    outline: none;
 }
 
 .clearfix::after {
@@ -73,139 +70,140 @@ a{
     display: block;
 }
 
-.distribution .font2{
-  font-size: 22px;
-  font-weight:700;
-  margin-right: 30px;
+.distribution .font2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-right: 30px;
 }
 
-.distribution h4{
-  display: flex;
-  flex-grow: row;
-  align-items: center;
-  margin: 40px 0;
+.distribution h4 {
+    display: flex;
+    flex-grow: row;
+    align-items: center;
+    margin: 40px 0;
 }
 
-.distribution h4 span{
-  margin-right: 20px;
-  height: 1px;
-  width: 100px;
-  background-color:black;
+.distribution h4 span {
+    margin-right: 20px;
+    height: 1px;
+    width: 100px;
+    background-color: black;
 }
 
-.distribution-box{
-  display: flex; 
-  flex-grow: row; 
-  justify-content: space-between;
+.distribution-box {
+    display: flex;
+    flex-grow: row;
+    justify-content: space-between;
 }
 
-.distribution-box li p{
-  font-size: 16px; 
-  margin-top: 5px;
+.distribution-box li p {
+    font-size: 16px;
+    margin-top: 5px;
 }
 
 .distribution-box li {
-  width: calc(25% - 60px/4);
+    width: calc(25% - 60px / 4);
 }
 
-.ssp{
-  font-size: 15px;
+.ssp {
+    font-size: 15px;
 }
 
-.sp{
-  font-size:18px;
-  font-weight: 400;
+.sp {
+    font-size: 18px;
+    font-weight: 400;
 }
 
-.ch3{
-  font-size:33px; font-weight: bolder;
+.ch3 {
+    font-size: 33px;
+    font-weight: bolder;
 }
 
-.mp{
-  margin: 20px 0 50px 0;
-  font-size: 20px;
+.mp {
+    margin: 20px 0 50px 0;
+    font-size: 20px;
 }
 
-.circle-system{
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap:wrap;
-  justify-content: center;
-  align-items: center;
+.circle-system {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-.circle-system li{
-  width: 160px;
-  margin: 20px;
-  display: block;
-  text-align: center;
+.circle-system li {
+    width: 160px;
+    margin: 20px;
+    display: block;
+    text-align: center;
 }
 
-.icon{
-  width: 36px; 
-  margin-bottom:20px;
+.icon {
+    width: 36px;
+    margin-bottom: 20px;
 }
 
-.categorybox{
-  margin: 150px 0 30px 0;
+.categorybox {
+    margin: 150px 0 30px 0;
 }
 
-.miniteambox{
-  text-align:center; 
-  font-size: 15px;
-  width: 110px;
-  height: 40px; 
-  background-Color:rgb(236, 234, 234); 
-  border-radius: 40px; 
-  padding: 5px;
-  margin-bottom: 10px;
+.miniteambox {
+    text-align: center;
+    font-size: 15px;
+    width: 110px;
+    height: 40px;
+    background-color: rgb(236, 234, 234);
+    border-radius: 40px;
+    padding: 5px;
+    margin-bottom: 10px;
 }
 
-.team-line{
-  margin: 20px auto;
-  height:100px; 
-  width:1px; 
-  background-color: black;
+.team-line {
+    margin: 20px auto;
+    height: 100px;
+    width: 1px;
+    background-color: black;
 }
 
-.flex-col{
-  display:flex;
-  flex-direction: column;
+.flex-col {
+    display: flex;
+    flex-direction: column;
 }
 
-.flex-row{
-  display:flex;
-  flex-direction: row;
+.flex-row {
+    display: flex;
+    flex-direction: row;
 }
 
-.team{
-  width: 250px; 
-  align-items: center;
+.team {
+    width: 250px;
+    align-items: center;
 }
 
-.team-title{
-  justify-content: space-between; 
-  text-align:center; 
-  align-items: center; 
-  flex-wrap:wrap; 
-  width: 202px;
-  height: 70px; 
-  background-Color:black; 
-  border-radius: 40px; 
-  padding: 8px 16px 8px 8px;
+.team-title {
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 202px;
+    height: 70px;
+    background-color: black;
+    border-radius: 40px;
+    padding: 8px 16px 8px 8px;
 }
 
-.circle-icon{
-  display:flex;
-  justify-content:center; 
-  align-items: center;
-  background-Color:white; 
-  width: 55px; 
-  aspect-ratio: 1; 
-  border-radius: 50%; 
+.circle-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 55px;
+    aspect-ratio: 1;
+    border-radius: 50%;
 }
 
-.circle-icon >img{
-  width: 70%; 
+.circle-icon > img {
+    width: 70%;
 }

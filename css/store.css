@@ -72,7 +72,7 @@ b {
 .map-wrap .btn-location {
     z-index: 1;
     margin-right: 7px;
-    top: 310px;
+    top: 410px;
     display: flex;
     right: calc((50% + 720px) - 270px);
     position: absolute;
@@ -121,15 +121,15 @@ b {
     height: 100%;
 }
 .info-wrap {
-    /*.store-section*/
     z-index: 1;
     position: absolute;
     top: 0;
     left: calc((50% + 720px) - 500px);
     width: 500px;
-    height: 100%;
+    /* height: 100%; */
+    height: 900px;
     background-color: #fff;
-    top: 285px;
+    top: 385px;
 }
 ul {
     list-style: none;
@@ -376,6 +376,9 @@ button {
     padding-right: 72px;
     font-size: 18px;
 }
+.info-wrap .info-search-box .search-form input::placeholder {
+    color: #1c1c1c;
+}
 .info-search-box .search-form .search-btn {
     position: absolute;
     top: 50%;
@@ -398,7 +401,8 @@ button {
     transform: scaleX(1.2);
 }
 .info-store-box {
-    height: calc(100% - 402px);
+    /* height: calc(100% - 402px); */
+    height: 54.4%;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0 30px;
