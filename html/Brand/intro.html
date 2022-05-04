@@ -3,7 +3,6 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title></title>
         <link
             href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
             rel="stylesheet"
@@ -18,6 +17,7 @@
         />
         <link rel="stylesheet" href="./introduction.css" />
         <link rel="stylesheet" href="./animation.css" />
+        <link rel="stylesheet" href="/css/layout.css" />
         <link
             rel="icon"
             href="http://dessert39.com/html/assets/img/common/dessert39_favicon.ico"
@@ -28,6 +28,275 @@
         <script src="./script.js"></script>
     </head>
     <body>
+        <header class="project-header">
+            <div
+                class="gnb-dummy"
+                style="
+                    height: 255px;
+                    padding-top: 0px;
+                    margin-top: 0px;
+                    padding-bottom: 0px;
+                    margin-bottom: 0px;
+                "
+            ></div>
+            <div class="header-wrap">
+                <div class="center1700">
+                    <nav class="gnb">
+                        <ul id="sns-before" class="menu-list">
+                            <li class="menu1 fw500">
+                                <a href="/html/Brand/intro.html" class="eng">
+                                    <span class="hidden">소개</span>
+                                    <span class="text">Brand</span>
+                                    <span class="arrow"></span>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a
+                                            href="/html/Brand/intro.html"
+                                            class="menu1-1"
+                                            ><span class="text">소개</span></a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="/html/Brand/bi.html"
+                                            class="menu1-3"
+                                            ><span class="text">BI</span></a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="/html/Brand/headoffice.html"
+                                            class="menu1-4"
+                                            ><span class="text">본사</span></a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="/html/Brand/location.html"
+                                            class="menu1-5"
+                                            ><span class="text" style=""
+                                                >오시는길</span
+                                            ></a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu2 fw500">
+                                <a href="/html/Menu/dessert.html" class="eng">
+                                    <span class="hidden">메뉴</span>
+                                    <span class="text">Menu</span>
+                                    <span class="arrow"></span>
+                                </a>
+                                <ul>
+                                    <style>
+                                        .menu2-3 .text .br02 {
+                                            display: none;
+                                        }
+                                        @media screen and (max-width: 1350px) {
+                                            .menu2-3 .text .br02 {
+                                                display: block;
+                                            }
+                                        }
+                                        @media screen and (max-width: 1024px) {
+                                            .menu2-3 .text .br01,
+                                            .menu2-3 .text .br02 {
+                                                display: none;
+                                            }
+                                        }
+                                    </style>
+                                    <li>
+                                        <a
+                                            href="/html/Menu/dessert.html"
+                                            class="menu2-1"
+                                        >
+                                            <span class="text">디저트</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="/html/Menu/drink.html"
+                                            class="menu2-2"
+                                        >
+                                            <span class="text"
+                                                >커피 &amp; 음료</span
+                                            >
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu3 fw500">
+                                <a href="/html/Store/store.html" class="eng">
+                                    <span class="hidden">매장찾기</span>
+                                    <span class="text">Store</span>
+                                    <span class="arrow"></span>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a
+                                            href="/html/Store/store.html"
+                                            class="menu3-1"
+                                            ><span class="text"
+                                                >매장찾기</span
+                                            ></a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu4 fw500">
+                                <a href="#" class="eng">
+                                    <span class="hidden">창업경쟁력</span>
+                                    <span class="text">Franchise</span>
+                                    <span class="arrow"></span>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="#" class="menu4-1"
+                                            ><span class="text"
+                                                >창업경쟁력</span
+                                            ></a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#" class="menu4-2"
+                                            ><span class="text"
+                                                >인테리어</span
+                                            ></a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#" class="menu4-4"
+                                            ><span class="text"
+                                                >가맹절차</span
+                                            ></a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#" class="menu4-3"
+                                            ><span class="text"
+                                                >가맹비용</span
+                                            ></a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#" class="menu4-5"
+                                            ><span class="text"
+                                                >가맹문의</span
+                                            ></a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu5 fw500">
+                                <a href="#" class="eng">
+                                    <span class="hidden">SNS</span>
+                                    <span class="text">Community</span>
+                                    <span class="arrow"></span>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="#" class="menu5-1"
+                                            ><span class="text">SNS</span></a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#" class="menu5-2"
+                                            ><span class="text">공지</span></a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#" class="menu5-4"
+                                            ><span class="text">이벤트</span></a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul id="target-sns" class="sns-list">
+                            <li>
+                                <a
+                                    href="https://www.facebook.com/dessert39"
+                                    target="_blank"
+                                    class="sns-menu sns-facebook"
+                                >
+                                    <img
+                                        src="/img/Facebook.svg"
+                                        alt="페이스북 아이콘"
+                                    />
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.instagram.com/dessert39_official"
+                                    target="_blank"
+                                    class="sns-menu sns-insta"
+                                >
+                                    <img
+                                        src="/img/Instagram.svg"
+                                        alt="인스타그램 아이콘"
+                                    />
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.youtube.com/channel/UC0ykSSGK7ik4_qIlyA-jpcg"
+                                    target="_blank"
+                                    class="sns-menu sns-youtube"
+                                >
+                                    <img
+                                        src="/img/youtube.svg"
+                                        alt="유튜브 아이콘"
+                                    />
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://blog.naver.com/dessertmakers"
+                                    target="_blank"
+                                    class="sns-menu sns-naver"
+                                >
+                                    <img
+                                        src="/img/naver.svg"
+                                        alt="네이버 아이콘"
+                                        title=""
+                                    />
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.tiktok.com/@dessert39_?"
+                                    target="_blank"
+                                    class="sns-menu sns-tiktok"
+                                >
+                                    <img
+                                        src="/img/tiktok.svg"
+                                        alt="틱톡 아이콘"
+                                        title=""
+                                    />
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <h1 class="logo">
+                        <span class="hidden">로고</span>
+                        <a href="/index.html">
+                            <span class="logo-simbol"
+                                ><img
+                                    src="/img/dessert39_simbol2.svg"
+                                    alt="로고 심볼 이미지"
+                                    title=""
+                                    style=""
+                            /></span>
+                        </a>
+                    </h1>
+                    <button id="sns-after" type="button" class="mbtn">
+                        <span class="line1"></span>
+                        <span class="line2"></span>
+                        <span class="line3"></span>
+                    </button>
+                </div>
+            </div>
+        </header>
         <div class="">
             <div class="top">
                 <div class="top-text" style="padding: 100px 1.8vw">

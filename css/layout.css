@@ -1,0 +1,451 @@
+* {
+    font-family: "Noto Sans KR", sans-serif;
+}
+header {
+    height: 100px;
+}
+ul {
+    list-style: none;
+    outline: none;
+}
+li {
+    list-style: none;`
+}
+span {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+    letter-spacing: inherit;
+}
+.hidden {
+    position: fixed;
+    left: -100000px;
+}
+a {
+    text-decoration: none;
+    color: #1c1c1c;
+}
+/* ---------------헤더--------------- */
+.project-header {
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.project-header.active .header-wrap {
+    -webkit-box-shadow: 0px 3.5px 7px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 3.5px 7px rgba(0, 0, 0, 0.05);
+}
+
+.project-header .gnb-dummy {
+    /* display: none; */
+    z-index: 80;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 255px;
+    background-color: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+.project-header .header-wrap {
+    z-index: 90;
+    position: relative;
+    background-color: #fff;
+    height: 100px;
+    -webkit-transition: -webkit-box-shadow 0.3s;
+    transition: -webkit-box-shadow 0.3s;
+    transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+}
+
+.project-header .header-wrap .center1700 {
+    position: relative;
+    height: 100%;
+}
+
+.project-header .header-wrap .center1700 .logo {
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 100%;
+    /* background-color: #fff; */
+    overflow: hidden;
+    margin: 0;
+}
+
+.project-header .header-wrap .center1700 .logo a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.project-header .header-wrap .center1700 .logo a .logo-text {
+    display: block;
+    width: 125px;
+}
+
+.project-header .header-wrap .center1700 .logo a .logo-text img {
+    display: block;
+    max-width: 100%;
+}
+
+.project-header .header-wrap .center1700 .logo a .logo-simbol {
+    display: block;
+    height: 80px;
+    bottom: 10px;
+}
+
+.project-header .header-wrap .center1700 .logo a .logo-simbol img {
+    display: block;
+    height: 100%;
+    width: auto;
+}
+
+.project-header .header-wrap .center1700 .gnb {
+    height: 100%;
+}
+
+.project-header .header-wrap .center1700 .gnb::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.project-header .header-wrap .center1700 .sns-list li .sns-menu {
+    overflow: hidden;
+}
+
+.project-header
+    .header-wrap
+    .center1700
+    .sns-list
+    li
+    .sns-menu.sns-facebook
+    img {
+    -o-object-fit: contain;
+    object-fit: contain;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.project-header .header-wrap .center1700 .sns-list li .sns-menu.sns-naver img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.project-header .header-wrap .center1700 .sns-list li .sns-menu.sns-tiktok img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.project-header .header-wrap .center1700 .sns-list li .sns-menu.sns-insta img {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.project-header .header-wrap .center1700 .sns-list li .sns-menu img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.center1700 {
+    width: 95%;
+    max-width: 1700px;
+    margin: 0 auto;
+}
+.menu-list .eng .text {
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: -0.5px;
+    font-weight: 500;
+}
+.menu-list a a .text {
+    font-size: 16px;
+    font-weight: 500;
+}
+.eng {
+    font-family: "Lexend Deca", sans-serif;
+}
+/* ---------------헤더 end--------------- */
+
+@media screen and (min-width: 1024.1px) {
+    /* ---------------PC 헤더--------------- */
+    .project-header:hover .header-wrap {
+        -webkit-box-shadow: 0px 3.5px 7px rgba(0, 0, 0, 0.05);
+        box-shadow: 0px 3.5px 7px rgba(0, 0, 0, 0.05);
+    }
+    .project-header .header-wrap .center1700 .gnb .menu-list {
+        height: 100%;
+        width: calc(100% - 180px);
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+    .project-header .header-wrap .center1700 .gnb .menu-list::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .project-header .header-wrap .center1700 .gnb .menu-list > li {
+        position: relative;
+        height: 100%;
+        background-color: #fff;
+    }
+    .project-header
+        .header-wrap
+        .center1700
+        .gnb
+        .menu-list
+        > li:nth-of-type(1),
+    .project-header
+        .header-wrap
+        .center1700
+        .gnb
+        .menu-list
+        > li:nth-of-type(2),
+    .project-header
+        .header-wrap
+        .center1700
+        .gnb
+        .menu-list
+        > li:nth-of-type(3) {
+        float: left;
+    }
+    .project-header
+        .header-wrap
+        .center1700
+        .gnb
+        .menu-list
+        > li:nth-last-of-type(1),
+    .project-header
+        .header-wrap
+        .center1700
+        .gnb
+        .menu-list
+        > li:nth-last-of-type(2) {
+        float: right;
+    }
+    .project-header
+        .header-wrap
+        .center1700
+        .gnb
+        .menu-list
+        > li:nth-of-type(1)
+        > a {
+        padding-left: 0;
+    }
+    .project-header .header-wrap .center1700 .gnb .menu-list > li:focus > a,
+    .project-header .header-wrap .center1700 .gnb .menu-list > li:hover > a {
+        color: #c0c0c0;
+    }
+    .project-header
+        .header-wrap
+        .center1700
+        .gnb
+        .menu-list
+        > li:focus
+        > a
+        .text::before,
+    .project-header
+        .header-wrap
+        .center1700
+        .gnb
+        .menu-list
+        > li:hover
+        > a
+        .text::before {
+        width: 100%;
+    }
+    .project-header .header-wrap .center1700 .gnb .menu-list > li > a {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: fit-content;
+        box-sizing: border-box;
+        padding: 0 40px;
+        transition: color 0.3s;
+    }
+    .project-header .header-wrap .center1700 .gnb .menu-list > li > a .icon,
+    .project-header .header-wrap .center1700 .gnb .menu-list > li > a .arrow {
+        display: none;
+    }
+    .project-header .header-wrap .center1700 .gnb .menu-list > li > a .text {
+        z-index: 1;
+        position: relative;
+    }
+    .project-header
+        .header-wrap
+        .center1700
+        .gnb
+        .menu-list
+        > li
+        > a
+        .text::before {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: block;
+        width: 0;
+        height: 35%;
+        background-color: #e4e8ec;
+        -webkit-transition: width 0.3s;
+        transition: width 0.3s;
+    }
+    .project-header
+        .header-wrap
+        .center1700
+        .gnb
+        .menu-list
+        > li:nth-of-type(1)
+        > ul {
+        padding-left: 0;
+    }
+    .project-header .header-wrap .center1700 .gnb .menu-list > li > ul {
+        /* display: none; */
+        position: absolute;
+        left: 0;
+        top: 100%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 15px 40px;
+    }
+
+    .project-header
+        .header-wrap
+        .center1700
+        .gnb
+        .menu-list
+        > li
+        > ul
+        > li
+        > a {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font-size: 16px;
+        height: 45px;
+        white-space: nowrap;
+        -webkit-transition: color 0.3s;
+        transition: color 0.3s;
+    }
+    .project-header
+        .header-wrap
+        .center1700
+        .gnb
+        .menu-list
+        > li
+        > ul
+        > li
+        > a:focus,
+    .project-header
+        .header-wrap
+        .center1700
+        .gnb
+        .menu-list
+        > li
+        > ul
+        > li
+        > a:hover {
+        color: #c0c0c0;
+    }
+    .project-header
+        .header-wrap
+        .center1700
+        .gnb
+        .menu-list
+        > li
+        > ul
+        > li
+        > a:focus
+        .text::before,
+    .project-header
+        .header-wrap
+        .center1700
+        .gnb
+        .menu-list
+        > li
+        > ul
+        > li
+        > a:hover
+        .text::before {
+        width: 100%;
+    }
+    .project-header
+        .header-wrap
+        .center1700
+        .gnb
+        .menu-list
+        > li
+        > ul
+        > li
+        > a
+        .text {
+        position: relative;
+    }
+    .project-header
+        .header-wrap
+        .center1700
+        .gnb
+        .menu-list
+        > li
+        > ul
+        > li
+        > a
+        .text::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: #c0c0c0;
+        transition: width 0.3s;
+    }
+    .project-header .header-wrap .center1700 .gnb .sns-list {
+        float: right;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 0 0 0 20px;
+    }
+    .project-header
+        .header-wrap
+        .center1700
+        .gnb
+        .sns-list
+        li:not(:nth-of-type(1)) {
+        margin-left: 15px;
+    }
+    .project-header .header-wrap .center1700 .gnb .sns-list li .sns-menu {
+        display: block;
+        width: 20px;
+        height: 20px;
+    }
+    .project-header .header-wrap .center1700 .mbtn {
+        display: none;
+    }
+    /* ---------------PC 헤더 end--------------- */
+}

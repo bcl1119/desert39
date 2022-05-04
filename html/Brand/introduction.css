@@ -5,6 +5,13 @@
     box-sizing: border-box;
     font-family: "Noto Sans KR", sans-serif;
 }
+span {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+    letter-spacing: inherit;
+}
 
 .font2 {
     font-family: "Lexend Deca", sans-serif;
