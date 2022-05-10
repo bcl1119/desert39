@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <link rel="stylesheet" href="/style.css" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script
+            type="text/javascript"
+            src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
+        <link rel="stylesheet" href="/script.js" />
+    </head>
+    <body>
+        <section class="main-section1">
+            <div class="explain">
+                <div class="mainName">Dessert39 Dessert</div>
+                <div class="box"></div>
+                <!-- <ul class="deRecImg recImg" style="display:flex;flex-direction:row; flex-wrap:true;"> -->
+                <ul class="deRecImg recImg banner-wrapper">
+                    <li>
+                        <img
+                            class="recommendImg"
+                            src="image/product/1.png"
+                            alt="순수우유 카스테라 케이크"
+                        />
+                        <h3>순수우유 카스테라 케이크</h3>
+                    </li>
+                    <li>
+                        <img
+                            class="recommendImg"
+                            src="image/product/2.png"
+                            alt="순수우유슈크림<br>(더블하드바움쿠헨)"
+                        />
+                        <h3>순수우유슈크림<br />(더블하드바움쿠헨)</h3>
+                    </li>
+                    <li>
+                        <img
+                            class="recommendImg"
+                            src="image/product/3.png"
+                            alt="완전 진한 카라멜(크레이프)"
+                        />
+                        <h3>완전 진한 카라멜(크레이프)</h3>
+                    </li>
+                    <li>
+                        <img
+                            class="recommendImg"
+                            src="image/product/4.png"
+                            alt="레드벨벳 티라미수(더블<br>크레이프)"
+                        />
+                        <h3>레드벨벳 티라미수(더블<br />크레이프)</h3>
+                    </li>
+                    <li>
+                        <img
+                            class="recommendImg"
+                            src="image/product/5.png"
+                            alt=""
+                        />
+                        <h3>5번째 사진</h3>
+                    </li>
+                </ul>
+                <div class="btn-slider-box">
+                    <span class="hidden menu-slider-target"></span>
+                    <button
+                        type="button"
+                        class="btn-slider btn-slider-prev slick-arrow"
+                        style="display: inline-block"
+                    >
+                        <span class="arrow"></span>
+                    </button>
+                    <button
+                        type="button"
+                        class="btn-slider btn-slider-next slick-arrow"
+                        style="display: inline-block"
+                    >
+                        <span class="arrow"></span>
+                    </button>
+                    <span
+                        style="background-size: 6.45161% 100%"
+                        class="progress-bar"
+                    ></span>
+                </div>
+                <a href="" class="eng fw500 btn-bubble">
+                    DESSERT MORE
+                    <span class="btn-bubble-inner">
+                        <span class="btn-bubble-itembox">
+                            <span class="btn-bubble-item"></span>
+                            <span class="btn-bubble-item"></span>
+                            <span class="btn-bubble-item"></span>
+                            <span class="btn-bubble-item"></span>
+                        </span>
+                    </span>
+                </a>
+            </div>
+        </section>
+        <!-- <ul class="deRecImg recImg banner-wrapper" >
+        <li>
+            <img class="recommendImg" src="image/product/1.png" alt=""/>
+            <h3>순수우유 카스테라 케이크</h3>
+        </li>
+        <li>
+            <img
+                class="recommendImg"
+                src="image/product/2.png"
+                alt=""/>
+            <h3>순수우유슈크림<br/>(더블하드바움쿠헨)</h3>
+        </li>
+        <li>
+            <img class="recommendImg" src="image/product/3.png" alt=""/>
+            <h3>완전 진한 카라멜(크레이프)</h3>
+        </li>
+        <li>
+            <img
+                class="recommendImg"
+                src="image/product/4.png"
+                alt=""/>
+            <h3>레드벨벳 티라미수(더블<br/>크레이프)</h3>
+        </li>
+        <li>
+            <img class="recommendImg" src="image/product/5.png" alt=""/>
+            <h3>완전 진한 카라멜(크레이프)</h3>
+        </li>
+
+    </ul>
+
+        <button type="button" class="prev-btn">prev</button>
+        <button type="button" class="next-btn">next</button> -->
+
+        <script type="text/javascript">
+            $(function () {
+                // var distance=0;
+                // function animation(){
+                //   $(".banner-wrap li").each(function(){
+                //     $(this).css("left",distance);
+                //     distance+=280;
+                //   });
+                // };
+                //
+                // animation();
+                // $('.prev-btn').on("click",function(){
+                //   $(".banner-wrap li").each(function(){
+                //
+                //     $(this).css("left",$(this).position().left-280);
+                //     if($(this).position().left<-280){
+                //       $(this).css("left",900);
+                //     }
+                //   });
+                //  });
+                //
+                //  $('.next-btn').on("click",function(){
+                //    $(".banner-wrap li").each(function(){
+                //      $(this).css("left",$(this).position().left+280);
+                //
+                //      if($(this).position().left>1350){
+                //        $(this).css("left",0);
+                //        distance=0;
+                //      }
+                //    });
+                //   });
+                $(".banner-wrapper").slick({
+                    rows: 1,
+                    rtl: false,
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                    slidesToShow: 4,
+                    prevArrow: $(".btn-slider-prev"),
+                    nextArrow: $(".btn-slider-next"),
+                });
+            });
+        </script>
+    </body>
+</html>

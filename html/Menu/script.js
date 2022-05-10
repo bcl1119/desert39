@@ -1,15 +1,35 @@
-$(function () {
-  $(".recBtn1").click(function () {
-    $(".recommend1020").css("visibility", "visible");
-    $(".recommend3040").css("visibility", "hidden");
-    $(".recommend4050").css("visibility", "hidden");
-    $(".recommendProm").css("visibility", "hidden");
+$(document).ready(function () {
+  $("#recBtn1").on("click", function () {
+    $(".recommend").css({ background: "#fff", color: "#1c1c1c" });
+    $(this).css({ background: "#1c1c1c", color: "#fff" });
+    $(".recommend1020").css("display", "block");
+    $(".recommend3040").css("display", "none");
+    $(".recommend4050").css("display", "none");
+    $(".recommendProm").css("display", "none");
   });
-  $(".recBtn2").click(function () {
+  $("#recBtn2").on("click", function () {
+    $(".recommend").css({ background: "#fff", color: "#1c1c1c" });
+    $(this).css({ background: "#1c1c1c", color: "#fff" });
     $(".recommend1020").css("display", "none");
     $(".recommend3040").css("display", "block");
     $(".recommend4050").css("display", "none");
     $(".recommendProm").css("display", "none");
+  });
+  $("#recBtn3").on("click", function () {
+    $(".recommend").css({ background: "#fff", color: "#1c1c1c" });
+    $(this).css({ background: "#1c1c1c", color: "#fff" });
+    $(".recommend1020").css("display", "none");
+    $(".recommend3040").css("display", "none");
+    $(".recommend4050").css("display", "block");
+    $(".recommendProm").css("display", "none");
+  });
+  $("#recBtn4").on("click", function () {
+    $(".recommend").css({ background: "#fff", color: "#1c1c1c" });
+    $(this).css({ background: "#1c1c1c", color: "#fff" });
+    $(".recommend1020").css("display", "none");
+    $(".recommend3040").css("display", "none");
+    $(".recommend4050").css("display", "none");
+    $(".recommendProm").css("display", "block");
   });
 });
 
@@ -112,6 +132,82 @@ function closeYogurt2() {
 }
 document.querySelector("#showYogurt2").addEventListener("click", showYogurt2);
 document.querySelector("#closeYogurt2").addEventListener("click", closeYogurt2);
+function showYogurt3() {
+  document.querySelector("#yogurt3").className = "background yogurt3 show";
+}
+function closeYogurt3() {
+  document.querySelector("#yogurt3").className = "background yogurt3";
+}
+document.querySelector("#showYogurt3").addEventListener("click", showYogurt3);
+document.querySelector("#closeYogurt3").addEventListener("click", closeYogurt3);
+function showYogurt4() {
+  document.querySelector("#yogurt4").className = "background yogurt4 show";
+}
+function closeYogurt4() {
+  document.querySelector("#yogurt4").className = "background yogurt4";
+}
+document.querySelector("#showYogurt4").addEventListener("click", showYogurt4);
+document.querySelector("#closeYogurt4").addEventListener("click", closeYogurt4);
+function showYogurt5() {
+  document.querySelector("#yogurt5").className = "background yogurt5 show";
+}
+function closeYogurt5() {
+  document.querySelector("#yogurt5").className = "background yogurt5";
+}
+document.querySelector("#showYogurt5").addEventListener("click", showYogurt5);
+document.querySelector("#closeYogurt5").addEventListener("click", closeYogurt5);
+function showYogurt6() {
+  document.querySelector("#yogurt6").className = "background yogurt6 show";
+}
+function closeYogurt6() {
+  document.querySelector("#yogurt6").className = "background yogurt6";
+}
+document.querySelector("#showYogurt6").addEventListener("click", showYogurt6);
+document.querySelector("#closeYogurt6").addEventListener("click", closeYogurt6);
+function showYogurt7() {
+  document.querySelector("#yogurt7").className = "background yogurt7 show";
+}
+function closeYogurt7() {
+  document.querySelector("#yogurt7").className = "background yogurt7";
+}
+document.querySelector("#showYogurt7").addEventListener("click", showYogurt7);
+document.querySelector("#closeYogurt7").addEventListener("click", closeYogurt7);
+function showYogurt8() {
+  document.querySelector("#yogurt8").className = "background yogurt8 show";
+}
+function closeYogurt8() {
+  document.querySelector("#yogurt8").className = "background yogurt8";
+}
+document.querySelector("#showYogurt8").addEventListener("click", showYogurt8);
+document.querySelector("#closeYogurt8").addEventListener("click", closeYogurt8);
+function showYogurt9() {
+  document.querySelector("#yogurt9").className = "background yogurt9 show";
+}
+function closeYogurt9() {
+  document.querySelector("#yogurt9").className = "background yogurt9";
+}
+document.querySelector("#showYogurt9").addEventListener("click", showYogurt9);
+document.querySelector("#closeYogurt9").addEventListener("click", closeYogurt9);
+function showYogurt10() {
+  document.querySelector("#yogurt10").className = "background yogurt10 show";
+}
+function closeYogurt10() {
+  document.querySelector("#yogurt10").className = "background yogurt10";
+}
+document.querySelector("#showYogurt10").addEventListener("click", showYogurt10);
+document
+  .querySelector("#closeYogurt10")
+  .addEventListener("click", closeYogurt10);
+function showYogurt21() {
+  document.querySelector("#yogurt21").className = "background yogurt21 show";
+}
+function closeYogurt21() {
+  document.querySelector("#yogurt21").className = "background yogurt21";
+}
+document.querySelector("#showYogurt21").addEventListener("click", showYogurt21);
+document
+  .querySelector("#closeYogurt21")
+  .addEventListener("click", closeYogurt21);
 
 function showTea1() {
   document.querySelector("#tea1").className = "background Tea1 show";

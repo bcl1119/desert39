@@ -1,6 +1,6 @@
 @import url(./layout_base.css);
 
-@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Noto+Sans+KR:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Noto+Sans+KR&display=swap");
 * {
   font-family: "Noto Sans KR", sans-serif;
 }
@@ -134,6 +134,7 @@ fieldset {
   position: relative;
   left: 18%;
   width: 80%;
+  margin-top: -200px;
 }
 .explain .recImg li {
   float: left;
@@ -148,12 +149,12 @@ fieldset {
 .explain .recImg li:last-child {
   margin-right: 0;
 }
+
 .explain .recImg li:before {
   content: "";
   position: absolute; /*부모 요소에는 position: relative를 주어야 함*/
-  background-color: black;
-  height: 1.8px;
-
+  background-color: #1c1c1c;
+  height: 1.6px;
   width: 0; /*초기에 보이지 않도록*/
   bottom: -5px; /*a태그 아래에 위치*/
   transition: 0.8s; /*애니메이션 동작 실행 시간 정의*/
@@ -209,7 +210,7 @@ fieldset {
 .promotion .taPro {
   width: 100%;
   height: 350px;
-  margin: 200px auto;
+  margin: 50px auto 200px auto;
   text-align: center;
 }
 .promotion .tr1stPro {
@@ -256,12 +257,120 @@ fieldset {
   background-color: white;
 }
 .explain .taRec .trRec .tdRec :hover {
-  background-color: #1c1c1c;
   cursor: pointer;
-  color: white;
 }
-.explain .taRec .trRec .tdRec label :hover {
+
+.recommend {
+  z-index: 1;
+  position: relative;
+  padding: 20px 46px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  transition: color 0.5s;
+  cursor: pointer;
+  border-radius: 25px;
+}
+.recommend:before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+.recommend:after {
+  content: "";
+  z-index: -2;
+  position: absolute;
+  left: 9px;
+  top: 9px;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s 0.2s;
+  border-radius: 25px;
+}
+.recommend:hover {
+  color: #fff;
+  border-radius: 25px;
+}
+.recommend:hover:after {
+  transition: all 0.3s;
+  left: 0;
+  top: 0;
+  border-radius: 25px;
+}
+.blob-btn__inner {
+  z-index: -1;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+.blob-btn__blobs {
+  position: relative;
+  display: block;
+  height: 100%;
+  filter: url("#goo");
+  border-radius: 25px;
+}
+.blob-btn__blob {
+  position: absolute;
+  top: 6px;
+  width: 25%;
+  height: 100%;
+  background: #1c1c1c;
   color: white;
+
+  border-radius: 25px;
+  transform: translate3d(0, 150%, 0) scale(1.7);
+  transition: transform 0.45s;
+}
+@supports (filter: url("#goo")) {
+  .blob-btn__blob {
+    transform: translate3d(0, 150%, 0) scale(1.4);
+    border-radius: 25px;
+  }
+}
+.blob-btn__blob:nth-child(1) {
+  left: 0%;
+  transition-delay: 0s;
+  border-radius: 25px;
+}
+.blob-btn__blob:nth-child(2) {
+  left: 30%;
+  transition-delay: 0.08s;
+  border-radius: 25px;
+}
+.blob-btn__blob:nth-child(3) {
+  left: 60%;
+  transition-delay: 0.16s;
+  border-radius: 25px;
+}
+.blob-btn__blob:nth-child(4) {
+  left: 90%;
+  transition-delay: 0.24s;
+  border-radius: 25px;
+}
+.recommend:hover .blob-btn__blob {
+  transform: translateZ(0) scale(1.7);
+  border-radius: 25px;
+}
+@supports (filter: url("#goo")) {
+  .recommend:hover .blob-btn__blob {
+    transform: translateZ(0) scale(1.4);
+    border-radius: 25px;
+  }
 }
 
 /*디저트*/
@@ -449,7 +558,7 @@ fieldset {
 
 .popup {
   position: absolute;
-  top: 50%;
+  top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #f8f9fa;
@@ -458,7 +567,7 @@ fieldset {
 
   /* 임시 지정 */
   width: 544px;
-  height: 722px;
+  height: 650px;
 
   /* 초기에 약간 아래에 배치 */
   transform: translate(-50%, -40%);
@@ -474,7 +583,7 @@ fieldset {
 .popup .text {
   padding: 25px;
   background-color: white;
-  height: 302px;
+  height: 315px;
   border-radius: 0 0 25px 25px;
 }
 
@@ -523,4 +632,147 @@ fieldset {
 .close img {
   width: 40px;
   height: 40px;
+}
+.quick {
+  position: fixed;
+  top: 171px;
+  right: 0;
+  width: 94px;
+  z-index: 100;
+}
+.quick > .quick_list > li {
+  background-color: #c0c0c0;
+  font-size: 15px;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  margin-bottom: 10px;
+  padding-top: 8px;
+  box-shadow: 2px 2px 2px 2px #c2c2c3;
+}
+.quick > .quick_list > li > a {
+  text-align: center;
+  height: 70px;
+  width: 70px;
+  cursor: pointer;
+}
+.quick > .quick_list > li > a > img {
+  width: 23px;
+  height: 23px;
+  max-width: 100%;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+.quick > .quick_list > li:last-child > a > img {
+  filter: invert(100%);
+}
+.quick > .quick_list > li > a > p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  line-height: 14px;
+  margin-top: 5px;
+}
+
+footer {
+  background-color: #f3f4f5;
+}
+footer > .foot_area {
+  position: relative;
+  padding-bottom: 40px;
+  height: 184.2px;
+}
+footer > .foot_area > .foot_list {
+  padding-top: 25px;
+  left: 250px;
+  top: 20px;
+  position: absolute;
+}
+
+footer .logoText {
+  margin: 40px auto auto 60px;
+  width: 100px;
+  height: 40.55px;
+}
+
+.foot_list li {
+  display: flex;
+  margin: 0 0 5px 0;
+}
+
+.foot_list li .footTitle {
+  margin: 0 10px 0 0;
+}
+.footTitle::after {
+  content: "";
+  width: 1.5px;
+  height: 50%;
+  border-right: 1px solid #1c1c1c;
+  position: absolute;
+  top: 6px;
+  right: -12px;
+}
+.footTitle {
+  font-weight: 600;
+  position: relative;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 20.8px;
+}
+.footEx {
+  margin-left: 10px;
+  font-size: 16px;
+  line-height: 20.8px;
+  word-break: normal;
+  letter-spacing: 0.5px;
+}
+
+footer .mailIcon {
+  width: 24px;
+  height: 16.2125px;
+}
+footer > .foot_area > .contactMail {
+  right: 50px;
+  top: 60px;
+  position: absolute;
+}
+footer > .foot_area > .contactMail > .contact {
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -1.5px;
+  line-height: 40px;
+  text-align: right;
+  height: 40px;
+
+  margin: 0 0 15px 0;
+  display: block;
+}
+footer > .foot_area > .contactMail > .mailAddress {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  line-height: 16px;
+  text-align: right;
+  display: inline;
+  cursor: pointer;
+}
+footer > .copy {
+  padding: 22px 38px 22px 38px;
+  border-top: 1px solid #c2c2c3;
+  height: 64.5px;
+  display: block;
+  font-size: 15px;
+  letter-spacing: -0.5px;
+  text-align: center;
+}
+footer > .copy > a {
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+  line-height: 12px;
+  margin-left: 5px;
+  cursor: pointer;
+  display: inline;
 }

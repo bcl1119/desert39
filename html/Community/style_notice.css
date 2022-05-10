@@ -1,0 +1,318 @@
+/* 공통 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+.center {
+  width: 95%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.dft-top {
+  height: 185px;
+  background-image: url(http://dessert39.com/html/assets/img/common/sub_banner_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.dft-top h2 {
+  padding-top: 110px;
+  font-size: 26px;
+}
+.dft-top h2 .tit {
+  display: block;
+  /* margin-top: 15px; */
+  font-size: 60px;
+}
+.ls-15 {
+  letter-spacing: -1.5px;
+}
+.fw500 {
+  font-weight: 500;
+}
+.fw700 {
+  font-weight: 700;
+}
+.pd100 {
+  padding: 100px 0;
+  box-sizing: border-box;
+}
+select:not(:-internal-list-box) {
+  overflow: visible !important;
+}
+.search-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+.search-box form {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.search-box .inner {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.search-box .inner .search-select {
+  width: 100px;
+  padding: 0 10px;
+}
+.search-box .inner .search-select,
+.search-box .inner .search-input {
+  border: none;
+  display: block;
+  height: 45px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 2px solid #1c1c1c;
+  color: #1c1c1c;
+}
+select:focus,
+input:focus {
+  outline: none;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 16px;
+  padding-left: 15px;
+  background: url(http://dessert39.com/html/assets/img/common/select_arrow2.png)
+    no-repeat 95% 50%;
+  border-radius: 0;
+}
+.search-box .inner .search-input {
+  margin-left: 10px;
+  width: 300px;
+  padding: 0 10px;
+  padding-right: 50px;
+  background-color: transparent;
+}
+.search-box .inner .btn-search {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 18px;
+}
+button,
+a {
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+input {
+  font-size: inherit;
+}
+.far {
+  font-weight: 400;
+}
+
+.fal,
+.far {
+  font-family: "Font Awesome 5 Pro";
+}
+.fa,
+.fab,
+.fad,
+.fal,
+.far,
+.fas {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+.fa-search:before {
+  content: "\f002";
+}
+
+ol,
+ul,
+dl,
+li {
+  list-style: none;
+  outline: none;
+}
+.list-line .list-item.thead {
+  border-radius: 10px 10px 0 0;
+  height: 55px;
+  color: #fff;
+  text-align: center;
+}
+.list-line .list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.list-line .list-item-empty {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 200px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 1px solid #c0c0c0;
+}
+.bgc1 {
+  background-color: #c0c0c0;
+}
+.list-line .list-item .date-box {
+  width: 120px;
+  text-align: center;
+}
+.list-line .list-item .number-box {
+  position: relative;
+  width: 100px;
+  text-align: center;
+}
+.list-line .list-item .tit-box {
+  width: calc(100% - 220px);
+}
+.list-line .list-item-empty {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 200px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 1px solid #c0c0c0;
+}
+/* 이벤트 */
+.title-search-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.title-search-wrap .event-title {
+  margin-bottom: 0;
+}
+.event-title {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+.event-list-section {
+  background-color: #fbfbfc;
+}
+.pdt100 {
+  padding-top: 100px;
+  box-sizing: border-box;
+}
+section {
+  display: block;
+  outline: none;
+}
+.title-search-wrap .event-title {
+  margin-bottom: 0;
+}
+.pdb100 {
+  padding-bottom: 100px;
+  box-sizing: border-box;
+}
+.list-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.list-gallery .list-item-empty {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 200px;
+}
+.event-finish-wrap {
+  background-color: #fff;
+}
+.pd100 {
+  padding: 100px 0;
+  box-sizing: border-box;
+}
+.event-title.event-finish::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: calc(-100% - 15px);
+  top: 50%;
+  width: 100%;
+  height: 1px;
+  background-color: #1c1c1c;
+}
+.pagination-btns {
+  width: 100%;
+  text-align: center;
+  margin-top: 25px;
+}
