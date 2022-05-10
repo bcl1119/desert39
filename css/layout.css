@@ -442,3 +442,150 @@ a {
     }
     /* ---------------PC 헤더 end--------------- */
 }
+
+/* ------------- quick 메뉴 ------------- */
+.quick {
+  position: fixed;
+  top: 171px;
+  right: 0;
+  width: 94px;
+  z-index: 100;
+}
+.quick > .quick_list > li {
+  background-color: #c0c0c0;
+  font-size: 15px;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  margin-bottom: 10px;
+  padding-top: 8px;
+  box-shadow: 2px 2px 2px 2px #c2c2c3;
+}
+.quick > .quick_list > li > a {
+  text-align: center;
+  height: 70px;
+  width: 70px;
+  cursor: pointer;
+}
+.quick > .quick_list > li > a > img {
+  width: 23px;
+  height: 23px;
+  max-width: 100%;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+.quick > .quick_list > li:last-child > a > img {
+  filter: invert(100%);
+}
+.quick > .quick_list > li > a > p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  line-height: 14px;
+  margin-top: 5px;
+}
+/* ---------------quick 메뉴 end ----------------- */
+/* ---------------footer ---------------- */
+
+footer {
+  background-color: #f3f4f5;
+}
+footer > .foot_area {
+  position: relative;
+  padding-bottom: 40px;
+  height: 184.2px;
+}
+footer > .foot_area > .foot_list {
+  padding-top: 25px;
+  left: 250px;
+  top: 20px;
+  position: absolute;
+}
+
+footer .logoText {
+  margin: 40px auto auto 60px;
+  width: 100px;
+  height: 40.55px;
+}
+
+.foot_list li {
+  display: flex;
+  margin: 0 0 5px 0;
+}
+
+.foot_list li .footTitle {
+  margin: 0 10px 0 0;
+}
+.footTitle::after {
+  content: "";
+  width: 1.5px;
+  height: 50%;
+  border-right: 1px solid #1c1c1c;
+  position: absolute;
+  top: 6px;
+  right: -12px;
+}
+.footTitle {
+  font-weight: 600;
+  position: relative;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 20.8px;
+}
+.footEx {
+  margin-left: 10px;
+  font-size: 16px;
+  line-height: 20.8px;
+  word-break: normal;
+  letter-spacing: 0.5px;
+}
+
+footer .mailIcon {
+  width: 24px;
+  height: 16.2125px;
+}
+footer > .foot_area > .contactMail {
+  right: 50px;
+  top: 60px;
+  position: absolute;
+}
+footer > .foot_area > .contactMail > .contact {
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -1.5px;
+  line-height: 40px;
+  text-align: right;
+  height: 40px;
+
+  margin: 0 0 15px 0;
+  display: block;
+}
+footer > .foot_area > .contactMail > .mailAddress {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  line-height: 16px;
+  text-align: right;
+  display: inline;
+  cursor: pointer;
+}
+footer > .copy {
+  padding: 22px 38px 22px 38px;
+  border-top: 1px solid #c2c2c3;
+  height: 64.5px;
+  display: block;
+  font-size: 15px;
+  letter-spacing: -0.5px;
+  text-align: center;
+}
+footer > .copy > a {
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+  line-height: 12px;
+  margin-left: 5px;
+  cursor: pointer;
+  display: inline;
+}

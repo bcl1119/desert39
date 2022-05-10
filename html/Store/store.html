@@ -13,28 +13,18 @@
             rel="stylesheet"
         />
         <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
-        />
-        <link
             rel="icon"
             href="http://dessert39.com/html/assets/img/common/dessert39_favicon.ico"
         />
         <link rel="stylesheet" href="/css/store.css" />
         <link rel="stylesheet" href="/css/layout.css" />
-        <script src="/js/header.js">
         <title>디저트39</title>
+        <script src="/js/header.js"></script>
     </head>
-    <script
+    <!-- <script
         src="https://kit.fontawesome.com/b44f782384.js"
         crossorigin="anonymous"
-    ></script>
+    ></script> -->
     <body>
         <header class="project-header">
             <div
@@ -196,21 +186,31 @@
                                 </ul>
                             </li>
                             <li class="menu5 fw500">
-                                <a href="/html/Community/sns.html" class="eng">
+                                <a href="#" class="eng">
                                     <span class="hidden">SNS</span>
                                     <span class="text">Community</span>
                                     <span class="arrow"></span>
                                 </a>
                                 <ul>
                                     <li>
-                                        <a
-                                            href="/html/Community/sns.html"
-                                            class="menu5-1"
+                                        <a href="#" class="menu5-1"
                                             ><span class="text">SNS</span></a
                                         >
                                     </li>
-                                    <li><a href="/html/Community/Notice.html" class="menu5-2"><span class="text">공지</span></a></li>
-                                    <li><a href="/html/Community/event.html" class="menu5-4"><span class="text">이벤트</span></a></li>
+                                    <li>
+                                        <a
+                                            href="/html/Community/Notice.html"
+                                            class="menu5-2"
+                                            ><span class="text">공지</span></a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="/html/Community/event.html"
+                                            class="menu5-4"
+                                            ><span class="text">이벤트</span></a
+                                        >
+                                    </li>
                                 </ul>
                             </li>
                         </ul>
@@ -1032,6 +1032,85 @@
             </div>
         </div>
         <div class="popup-bg"></div>
+        <div class="quick">
+            <ul class="quick_list lexend">
+                <li class="spread">
+                    <a href="/html/Store/store.html">
+                        <img src="/img/store.svg" alt="STORE" />
+                        <p>STORE</p>
+                    </a>
+                </li>
+                <li class="spread">
+                    <a href="#">
+                        <img src="/img/kakao_ch.svg" alt="KAKAO" />
+                        <p>KAKAO</p>
+                    </a>
+                </li>
+                <li class="spread">
+                    <a href="#">
+                        <img src="/img/tel.svg" alt="TEL" />
+                        <p>TEL</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="/img/toTop.png" alt="TOP" />
+                        <p>TOP</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <footer class="lexend">
+            <div class="foot_area box_inner">
+                <a href="#"
+                    ><img
+                        class="logoText"
+                        src="/img/dessert39_logo.svg"
+                        alt="로고 텍스트 이미지"
+                /></a>
+                <ul class="foot_list clear lexend">
+                    <li>
+                        <h4 class="footTitle lexend">Company/CEO</h4>
+                        <p class="footEx">SMC international/Shin Minchang</p>
+                    </li>
+                    <li>
+                        <h4 class="footTitle lexend">Address</h4>
+                        <p class="footEx">
+                            321, Eonju-ro, Gangnam-gu, Seoul, Republic of Korea
+                        </p>
+                    </li>
+                    <li>
+                        <h4 class="footTitle lexend">Customer Service</h4>
+                        <p class="footEx"><a href="#">1644-2927</a></p>
+                    </li>
+                    <li>
+                        <h4 class="footTitle lexend">Business License</h4>
+                        <p class="footEx"><a href="#">719 - 86 - 00092</a></p>
+                    </li>
+                </ul>
+                <ul class="contactMail">
+                    <li class="contact lexend">Contact us</li>
+                    <li class="mailAddress">
+                        <a href="#"
+                            ><img
+                                class="mailIcon"
+                                src="/img/contact_icon.svg"
+                                alt="메일 아이콘"
+                            />dessert39@smcinternational.co.kr</a
+                        >
+                    </li>
+                </ul>
+            </div>
+            <div class="copy box_inner lexend">
+                Copyright&copy; 2021 Dessert39 All Rights Reserved.
+                <a
+                    href="http://www.dessert39.com/bbs/login.php?url=http%3A%2F%2Fwww.dessert39.com%2Fadm%2F"
+                    target="_blank"
+                    >ADMIN</a
+                >
+            </div>
+        </footer>
     </body>
 
     <!--------------- 카카오 맵 api 자바스크립트 부분 --------------->
