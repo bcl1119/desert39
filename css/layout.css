@@ -574,7 +574,6 @@ footer > .foot_area > .contactMail > .mailAddress {
 footer > .copy {
   padding: 22px 38px 22px 38px;
   border-top: 1px solid #c2c2c3;
-  height: 64.5px;
   display: block;
   font-size: 15px;
   letter-spacing: -0.5px;
@@ -589,3 +588,6 @@ footer > .copy > a {
   cursor: pointer;
   display: inline;
 }
+
+/* ---------------- 모바일 헤더 -------------------- */
+
