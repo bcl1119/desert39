@@ -33,6 +33,47 @@ $(document).ready(function () {
   });
 });
 
+// $(function () {
+//   var distance = 0;
+//   function animation() {
+//     $(".banner-wrap li").each(function () {
+//       $(this).css("left", distance);
+//       distance += 280;
+//     });
+//   }
+
+//   animation();
+//   $(".prev-btn").on("click", function () {
+//     $(".banner-wrap li").each(function () {
+//       $(this).css("left", $(this).position().left - 280);
+//       if ($(this).position().left < -280) {
+//         $(this).css("left", 900);
+//       }
+//     });
+//   });
+
+//   $(".next-btn").on("click", function () {
+//     $(".banner-wrap li").each(function () {
+//       $(this).css("left", $(this).position().left + 280);
+
+//       if ($(this).position().left > 1350) {
+//         $(this).css("left", 0);
+//         distance = 0;
+//       }
+//     });
+//   });
+//   $(".banner-wrapper").slick({
+//     rows: 1,
+//     rtl: false,
+//     autoplay: true,
+//     autoplaySpeed: 3000,
+//     slidesToShow: 4,
+//     prevArrow: $(".btn-slider-prev"),
+//     nextArrow: $(".btn-slider-next"),
+//   });
+// });
+
+/*
 function showCoffee1() {
   document.querySelector("#coffee1").className = "background coffee1 show";
 }
@@ -325,3 +366,4 @@ document
 document
   .querySelector("#closeProtein12")
   .addEventListener("click", closeProtein12);
+  */

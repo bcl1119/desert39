@@ -39,16 +39,7 @@
     </head>
     <body>
         <header class="project-header">
-            <div
-                class="gnb-dummy"
-                style="
-                    height: 255px;
-                    padding-top: 0px;
-                    margin-top: 0px;
-                    padding-bottom: 0px;
-                    margin-bottom: 0px;
-                "
-            ></div>
+            <div class="gnb-dummy"></div>
             <div class="header-wrap">
                 <div class="center1700">
                     <nav class="gnb">
@@ -2987,6 +2978,22 @@
         </footer>
     </body>
 </html>
+<!-- <script>
+    jQuery(document).ready(function () {
+        $(".project-header").mouseover(function () {
+            $(".gnb-dummy,.gnb .menu-list > li > ul")
+                .css("display", "block")
+                .stop()
+                .slideDown(500);
+        });
+        $(".project-header").mouseout(function () {
+            $(".gnb-dummy,.gnb .menu-list > li > ul")
+                .css("display", "none")
+                .stop()
+                .slideUp(500);
+        });
+    });
+</script> -->
 <script src="http://code.jquery.com/jquery-3.5.1.min.js">
     // $(document).ready(function(){
     //     function animation(){

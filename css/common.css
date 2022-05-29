@@ -132,9 +132,8 @@ fieldset {
 
 .explain .recImg {
   position: relative;
-  left: 18%;
-  width: 80%;
-  margin-top: -200px;
+  width: 1000px;
+  margin: -200px auto 0 auto;
 }
 .explain .recImg li {
   float: left;
@@ -208,7 +207,7 @@ fieldset {
 }
 
 .promotion .taPro {
-  width: 100%;
+  width: 1500px;
   height: 350px;
   margin: 50px auto 200px auto;
   text-align: center;
@@ -225,7 +224,8 @@ fieldset {
 }
 .promotion .tdProImg li > img {
   float: left;
-  width: 350px;
+  width: 565px;
+  height: 318px;
   position: relative;
   text-align: center;
   margin: 0 0 0 2%;
@@ -239,20 +239,27 @@ fieldset {
 
 /*음료*/
 .explain .taRec {
-  width: 800px;
-  height: 45px;
+  text-align: center;
+  width: 1000px;
+  height: 55px;
   margin: 50px auto;
-  border-spacing: 10px;
-  border-collapse: separate;
+  overflow: hidden;
+}
+.explain .tdRec {
+  display: inline-flex;
+  margin-right: 25px;
+  border-radius: 50px;
+  height: 55px;
+  border: 1px solid #1c1c1c;
+  background-color: white;
+  text-align: justify;
 }
 .explain .taRec .trRec .tdRec button {
-  width: 180px;
-  padding: 10px 30px 10px 30px;
   text-align: center;
   font-size: 16px;
   font-weight: 500;
-  border-radius: 25px;
-  height: 50px;
+  border-radius: 50px;
+  height: 45px;
   border: 1px solid #1c1c1c;
   background-color: white;
 }
@@ -331,7 +338,6 @@ fieldset {
   height: 100%;
   background: #1c1c1c;
   color: white;
-
   border-radius: 25px;
   transform: translate3d(0, 150%, 0) scale(1.7);
   transition: transform 0.45s;
@@ -383,7 +389,7 @@ fieldset {
 .grey {
   position: relative;
   background-color: #fafbfc;
-  padding: 50px 0 0 0;
+  padding: 50px 0 70px 0;
 }
 .grey .beverageMenu .menuTitle {
   font-size: 60px;
@@ -407,14 +413,16 @@ fieldset {
   margin: 30px 0;
 }
 .grey .beverageMenu .taMenu {
-  margin: 0 auto;
-  border-spacing: 39px;
+  margin: 40px auto 0 auto;
+  text-align: center;
 }
-.grey .beverageMenu .taMenu td {
+.grey .beverageMenu .taMenu li {
+  display: inline-flex;
   width: 143px;
   height: 143px;
   border: 3px solid black;
   text-align: center;
+  padding-top: 18px;
   margin: 0 2% 0 0;
   font-weight: 700;
 }
@@ -428,29 +436,30 @@ fieldset {
 .grey .beverageMenu .taMenu p {
   margin: 20px 0 0 0;
 }
-.grey .beverageMenu .taMenu td:hover {
+.grey .beverageMenu .taMenu li:hover {
   background-color: black;
   cursor: pointer;
   color: white;
 }
-.grey .beverageMenu .taMenu td:hover img {
+.grey .beverageMenu .taMenu li:hover img {
   filter: invert(100%);
 }
-.grey .beverageMenu .taMenu td:hover a {
+.grey .beverageMenu .taMenu li:hover a {
   color: white;
 }
 
 .grey > .mainMenu > .menuList {
   width: 95%;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
   border-spacing: 20px;
 }
 .grey > .mainMenu > .menuList img {
   width: 170px;
   height: 170px;
 }
-.grey .mainMenu .menuList .tdMenuList {
+.grey .mainMenu .menuList .liMenuList {
+  display: inline-flex;
   background-color: white;
   width: 264px;
   height: 376px;
@@ -462,32 +471,43 @@ fieldset {
   line-height: 20px;
   letter-spacing: -0.7px;
   word-spacing: 0;
+  margin: 10px;
+  padding-top: 15px;
 }
-.grey .mainMenu .menuList .tdMenuList .name {
+.grey .mainMenu .menuList .liMenuList ul {
+  margin: 0 auto;
+  text-align: center;
+  width: 220px;
+}
+
+.grey .mainMenu .menuList .liMenuList .name {
   font-size: 20px;
   font-weight: 700;
   margin: 15px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-.grey .mainMenu .menuList .tdMenuList .price {
-  margin-top: 3px;
+.grey .mainMenu .menuList .liMenuList .price {
+  margin-top: 8px;
 }
-.grey .mainMenu .menuList .tdMenuList .more {
+.grey .mainMenu .menuList .liMenuList .more {
   border: 2px solid;
   font-size: 14px;
   font-weight: 600;
   width: 110px;
   height: 32px;
   border-radius: 25px;
-  margin: 30px auto 0 auto;
-  padding: 5px 0 0 0;
+  margin: 20px auto 0 auto;
+  padding: 5px 0 2px 0;
 }
-.grey .mainMenu .menuList .tdMenuList .more:hover {
+.grey .mainMenu .menuList .liMenuList .more:hover {
   background-color: black;
   cursor: pointer;
   color: white;
 }
 
-.grey .mainMenu .menuList .tdMenuList .more a:hover {
+.grey .mainMenu .menuList .liMenuList .more a:hover {
   color: white;
 }
 
@@ -776,3 +796,428 @@ footer > .copy > a {
   cursor: pointer;
   display: inline;
 }
+/* ----------- 모바일 반응형 시작 -----------*/
+@media screen and (max-width: 426px) {
+  /*제목*/
+
+  .main > .text {
+    padding: 135px 20px 0 20px;
+  }
+  .main > .text > .kor {
+    font-size: 18px;
+    margin-bottom: -10px;
+  }
+  .main > .text > .beverage {
+    font-size: 45px;
+    font-weight: 600;
+  }
+  /*추천베스트메뉴*/
+  /*공통*/
+  .explain .mainName {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 50px;
+  }
+  .explain .box {
+    height: 10px;
+    width: 220px;
+    margin: -20px -110px 0 -110px;
+    left: 50%;
+  }
+
+  .explain .recImg {
+    width: 400px;
+    overflow: hidden;
+  }
+  .explain .recImg li {
+    float: left;
+    width: 80px;
+    margin: 0 10px;
+    text-align: center;
+  }
+
+  .explain .recImg li:before {
+    display: none;
+  }
+
+  .explain .recImg li .recommendImg {
+    width: 160px;
+    height: 160px;
+  }
+  .explain .recImg li .recommendImg:hover {
+    pointer-events: none;
+  }
+  .explain .underBar {
+    height: 20px;
+  }
+  .explain .underBar .left,
+  .explain .underBar .right {
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+  }
+  .explain .underBar .bar {
+    width: 300px;
+    margin: 0 20px 0 20px;
+  }
+
+  .promotion .taPro {
+    width: 400px;
+  }
+  .promotion .tr1stPro {
+    height: 200px;
+  }
+  .promotion .tr1stPro > td:nth-child(odd) > a > img {
+    width: 20px;
+    height: 20px;
+  }
+  .promotion .tdProImg {
+    padding: 0 10px;
+  }
+  .promotion .tdProImg li > img {
+    width: 250px;
+  }
+  .promotion .taPro .tr2ndPro .bar > img {
+    height: 35px;
+    width: 95%;
+    margin: 0 30px;
+  }
+
+  /*음료*/
+  .explain .taRec {
+    text-align: center;
+    width: 460px;
+    height: 120px;
+    margin: 40px auto;
+    overflow: hidden;
+  }
+  .explain .taRec span {
+    display: none;
+  }
+  .explain .tdRec {
+    display: inline-flex;
+    margin-right: 25px;
+    border-radius: 50px;
+    width: 190px;
+    height: 35px;
+    border: 1px solid #1c1c1c;
+    background-color: white;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .explain .taRec .trRec .tdRec button {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 50px;
+    height: 50px;
+    border: 1px solid #1c1c1c;
+    background-color: white;
+    text-align: center;
+  }
+
+  .recommend {
+    z-index: 1;
+    position: relative;
+    padding: 5px 40px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    transition: color 0.5s;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+  .recommend:before {
+    pointer-events: none;
+  }
+  .recommend:after {
+    pointer-events: none;
+  }
+  .recommend:hover {
+    pointer-events: none;
+  }
+  .recommend:hover:after {
+    pointer-events: none;
+  }
+  .blob-btn__inner {
+    display: none;
+  }
+
+  /*디저트*/
+  .explain .deRecImg {
+    margin: 60px 300px;
+  }
+
+  /*회색배경*/
+  /*공통*/
+  .grey {
+    padding-bottom: 70px;
+  }
+  .grey .beverageMenu .menuTitle {
+    font-size: 30px;
+    font-weight: 900;
+    margin: 20px auto 0 auto;
+  }
+
+  .grey .box {
+    position: absolute;
+    z-index: -100;
+    background-color: #ececec;
+    height: 10px;
+    width: 220px;
+    margin: -20px -110px 0 -110px;
+    left: 50%;
+  }
+  .grey .beverageMenu > p {
+    font-size: 16px;
+    text-align: center;
+    margin: 10px 0 20px 0;
+  }
+  .grey .beverageMenu .taMenu {
+    margin: 0 auto;
+    border-spacing: 10px;
+  }
+  .grey .beverageMenu .taMenu li {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    text-align: center;
+    margin: 5px 2% 0 0;
+    font-weight: 600;
+    font-size: 13px;
+  }
+  .grey .beverageMenu .taMenu a {
+    width: 100px;
+    height: 100px;
+  }
+  .grey .beverageMenu .taMenu .menuImg {
+    height: 30px;
+    margin-bottom: -5px;
+  }
+  .grey .beverageMenu .taMenu p {
+    line-height: 18px;
+    margin: 12px 0 0 0;
+  }
+
+  .grey > .mainMenu > .menuList {
+    width: 95%;
+    margin: 0 auto;
+    text-align: left;
+    border-spacing: 20px;
+  }
+  .grey > .mainMenu > .menuList img {
+    width: 120px;
+    height: 120px;
+    margin: -5px;
+  }
+  .grey .mainMenu .menuList .liMenuList {
+    display: inline-flex;
+    background-color: white;
+    width: 190px;
+    height: 270px;
+    font-size: 13px;
+    font-weight: 300;
+    box-sizing: border-box;
+    box-shadow: rgba(38, 38, 38, 0.094) 0 0 20px 0;
+    border-radius: 10px;
+    line-height: 20px;
+    letter-spacing: -0.7px;
+    word-spacing: 0;
+    margin: 5px;
+  }
+  .grey .mainMenu .menuList .liMenuList .name {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 15px 0;
+  }
+  .grey .mainMenu .menuList .liMenuList .size {
+    margin-top: -7px;
+  }
+  .grey .mainMenu .menuList .liMenuList .price {
+    margin-top: 0;
+  }
+  .grey .mainMenu .menuList .liMenuList .more {
+    border: 2px solid;
+    font-size: 13.5px;
+    font-weight: 600;
+    width: 90px;
+    height: 32px;
+    border-radius: 25px;
+    margin: 10px auto 0 auto;
+    padding: 5px 0 0 0;
+  }
+
+  /*음료*/
+  #coffee > p:first-child,
+  #yogurt > p:first-child,
+  #tea > p:first-child,
+  #godprice > p:first-child,
+  #cheesepromage > p:first-child,
+  #protein > p:first-child {
+    font-size: 26px;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 80px;
+  }
+  #coffee > p:nth-child(2),
+  #yogurt > p:nth-child(2),
+  #tea > p:nth-child(2),
+  #godprice > p:nth-child(2),
+  #cheesepromage > p:nth-child(2),
+  #protein > p:nth-child(2) {
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    color: #999999;
+    margin: 15px 0 15px 0;
+  }
+
+  /*디저트*/
+  #cake > p:first-child,
+  #bingsu > p:first-child,
+  #macaron > p:first-child,
+  #cookie > p:first-child,
+  #bakery > p:first-child,
+  #tokyoroll > p:first-child {
+    font-size: 26px;
+    font-weight: 800;
+    text-align: center;
+    margin: 80px 0 40px 0;
+  }
+  .quick {
+    position: fixed;
+    z-index: 100;
+    top: 660px;
+    right: 105px;
+    width: 94px;
+    z-index: 100;
+  }
+  .quick .spread {
+    display: none;
+  }
+  .quick > .quick_list > li {
+    height: 50px;
+    width: 50px;
+  }
+  .quick > .quick_list > li > a {
+    text-align: center;
+    height: 70px;
+    width: 70px;
+  }
+  .quick > .quick_list > li > a > img {
+    width: 18px;
+    height: 18px;
+  }
+  .quick > .quick_list > li:last-child > a > img {
+    filter: invert(100%);
+  }
+  .quick > .quick_list > li > a > p {
+    font-size: 12px;
+    margin-top: 0;
+  }
+
+  footer {
+    background-color: #f3f4f5;
+  }
+  footer > .foot_area {
+    position: relative;
+    padding-bottom: 40px;
+    height: 280px;
+    text-align: center;
+  }
+  footer > .foot_area > .foot_list {
+    padding-top: 25px;
+    left: 0;
+    top: 50px;
+    position: absolute;
+    text-align: center;
+  }
+
+  footer .logoText {
+    margin: 20px auto auto auto;
+    width: 80px;
+    height: 40.55px;
+  }
+
+  .foot_list li {
+    display: inline-flex;
+    margin: 0 0 5px 0;
+    text-align: center;
+  }
+
+  .foot_list li .footTitle {
+    margin: 0 5px 0 0;
+  }
+  .footTitle::after {
+    content: "";
+    width: 1.5px;
+    height: 50%;
+    border-right: 1px solid #1c1c1c;
+    position: absolute;
+    top: 6px;
+    right: -8.5px;
+  }
+  .footTitle {
+    font-weight: 600;
+    position: relative;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    line-height: 20.8px;
+  }
+  .footEx {
+    margin-left: 10px;
+    font-size: 12px;
+    line-height: 20.8px;
+    word-break: normal;
+    letter-spacing: 0.5px;
+  }
+
+  footer .mailIcon {
+    width: 18px;
+    height: 16.2125px;
+    margin-right: 5px;
+  }
+  footer > .foot_area > .contactMail {
+    left: 0;
+    top: 180px;
+    position: absolute;
+    text-align: center;
+  }
+  footer > .foot_area > .contactMail > .contact {
+    display: inline-flex;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: -1.5px;
+    line-height: 40px;
+    text-align: center;
+    height: 40px;
+    width: 400px;
+    margin: 0 auto 5px 160px;
+  }
+  footer > .foot_area > .contactMail > .mailAddress {
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    line-height: 16px;
+    text-align: center;
+    display: inline;
+
+    margin-left: 40px;
+  }
+  footer > .copy {
+    font-size: 13px;
+  }
+  footer > .copy > a {
+    font-weight: 600;
+    font-size: 11px;
+    margin: 8px 0 0 0;
+
+    display: block;
+  }
+}
+/* ----------- 모바일 반응형 끝 -----------*/
