@@ -1,3 +1,4 @@
+// 추가해야 되는 링크들
 <link rel="stylesheet" type="text/css" href="/css/layout.css" />
 <link rel="icon" href="http://dessert39.com/html/assets/img/common/dessert39_favicon.ico">
 <script
@@ -6,6 +7,7 @@
 </script>
 <script src="/js/header.js"></script>
 
+// 헤더
 <header class="project-header">
     <div class="gnb-dummy" style=" height: 255px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;"></div>
     <div class="header-wrap">
@@ -133,6 +135,10 @@
     </div>
 </header>
 
+// 헤더 끝
+
+
+// 퀵 메뉴 시작
 <div class="quick">
     <ul class="quick_list lexend">
         <li class="spread">
@@ -161,6 +167,10 @@
         </li>
     </ul>
 </div>	
+
+// 퀵메뉴 끝
+
+// 푸터 시작
 
 <footer class="lexend">
       <div class="foot_area box_inner">
